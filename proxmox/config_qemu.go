@@ -31,7 +31,7 @@ type AgentNetworkInterface struct {
 	MACAddress  string
 	IPAddresses []net.IP
 	Name        string
-	Statistics  map[string]int64
+	Statistics  map[string]uint64
 }
 
 // ConfigQemu - Proxmox API QEMU options

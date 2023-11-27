@@ -321,7 +321,7 @@ func (a *AgentNetworkInterface) UnmarshalJSON(b []byte) error {
 			Prefix        int    `json:"prefix"`
 		} `json:"ip-addresses"`
 		Name       string           `json:"name"`
-		Statistics map[string]int64 `json:"statistics"`
+		Statistics map[string]uint64 `json:"statistics"`
 	}
 	err := json.Unmarshal(b, &intermediate)
 	if err != nil {
